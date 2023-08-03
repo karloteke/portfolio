@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main {
+    height: 100vh;
+    background: url('./woman.gif');
+    background-size: cover;
+    background-position: center bottom;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 30px 23px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px; 
+    font-family: 'Morganite', sans-serif;
+    line-height: 30px; 
+    text-align: center; 
+}
+
+.active{
+    background: white;
+    color:#D22F85; 
+    height: 30px; 
+    text-align: center; 
+  }
+
+  li:hover {
+    background: #D22F85;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+  nav ul {
+    /* Ajusta el margen entre los elementos del menú según tu preferencia */
+    margin: 0 10px;
+}
+h1{
+    color:#FCF300;
+    font-family: 'Morganite', sans-serif;
+    font-size: 170px;
+    margin: 0px;
+    margin-left: 293;
+    margin-top: 20;
+    font-weight: 900;
+    text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 3px; 
+}
+
+h2{
+    color:white;
+    font-family: 'Morganite', sans-serif;
+    font-size: 170px;
+    margin: 0px;
+    margin-left: 213;
+    margin-top: -20px;
+    font-weight: 900;
+    text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 3px; 
+}
+
+h3{
+    color:#f78da7;
+    font-family: 'Morganite', sans-serif;
+    font-size: 66px;
+    margin: 0px;
+    margin-left: 308;
+    margin-top: 3;
+    font-weight: 800;
+    text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 3px; 
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slogan-design {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
