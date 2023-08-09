@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .main {
     height: 100vh;
-    background: url('./woman.gif');
+    background: url('./images/woman.gif');
     background-size: cover;
     background-position: center bottom;
 }
@@ -32,10 +32,14 @@ li{
     text-align: center; 
 }
 
+li a {
+    text-decoration: none;
+    color: white;
+}
 .active{
     background: white;
     color:#D22F85; 
-    height: 30px; 
+    height: 39px; 
     text-align: center; 
   }
 
@@ -86,6 +90,22 @@ h3{
     letter-spacing: 3px; 
 }
 
+h4{
+    color:#8E2B6C;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 260;
+}
+
+h5{
+    color:#8E2B6C;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100;
+}
+
 nav{
     display: flex;
     justify-content: flex-end;
@@ -96,3 +116,69 @@ nav{
     display: flex;
     flex-direction: column;
   }
+
+.section-container{
+    
+    background-color: rgb(255, 255, 255);
+    padding: 32px 74px ;
+    margin-top: 215px;
+}
+
+p{
+    color:black;
+    font-size: 20px;
+    margin-bottom: 94px;  
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 95px;
+    padding-right: 130px;
+}
+
+.biography{
+   
+    margin-top: 75px;
+    margin-bottom: 94px;  
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 95px;
+    padding-right: 130px;
+
+}
+.section-container2{
+    display: flex;
+    flex-direction: column;
+    background: url('./images/fondo.png');
+    padding: 8px 30px ;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.image-row{
+    display: flex;
+    justify-content: center; 
+    gap: 80px;   
+    margin-top: 0px;
+}
+
+.image-row img {
+    width: 500px;
+    margin: 25px;
+    margin-left: 50px;
+    margin-right: 10px;
+    border: 3px solid #929191; 
+    border-radius: 10px; /*  borde redondeado */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave a la propiedad transform */
+}
+
+img{
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    width: 200px;  
+}
+
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
