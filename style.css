@@ -79,16 +79,20 @@ h2{
     letter-spacing: 3px; 
 }
 
-.about-me{
+.title-section{
   color: #000000;
   font-family: "Bebas Neue", Sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding-top: 60px;
   padding-bottom: 0px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
 
 h3{
     color:#f78da7;
@@ -187,6 +191,25 @@ img{
     width: 200px;  
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr); /* 3 columnas de igual tamaño */
+  padding-top: 60px;
+  justify-content: center;
+}
+
+.image-row-proyectos {
+  display: grid;
+  justify-content: center;
+  align-content: center; 
+  gap: 0px;
+}
+
+.image-row-proyectos img {
+  width: 440px;
+  height: 208px;
+  border: 3px solid black;
+}
 .slogan{
   font-family: inherit;
   text-transform: uppercase;
@@ -226,6 +249,7 @@ img{
   display: flex;
   flex-direction: column; 
   padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 .slogan-services{
@@ -264,38 +288,22 @@ img{
   box-shadow: 9px 7px 2px 0px #c15b99;
   font-size: 25px;
   font-family: 'Roboto', sans-serif; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 30px
+ 
   }
 
 .description {
   color: white;
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 700; 
+  font-weight: 500; 
   font-size: 24px; 
   margin-bottom: 10px;
   display: inline-block;
-}
-
-.box-container{
-  font-size: 15px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  display: block;
-  width: 677px;
-  height: 135px;
+  font-family: inherit;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-size: 32px;
+  line-height: 39px;
+  padding-right: 40px;
   padding-left: 50px;
-  padding-right: 50px;
-}
-
-.service-text{
-  margin-left: 280px;
-  margin-right: 280px;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 115%;
-  padding-bottom: 0px;
 }
 
 .button-container{
@@ -304,10 +312,12 @@ img{
 }
 
 .service-title {
-    font-size: 56px;
+    font-size: 38px;
     font-weight: bold;
     color: white; 
-    font-family:math; 
+    font-family: "Bebas Neue", Sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     padding-top: 30px;
 }
 
@@ -338,18 +348,12 @@ img{
   max-width: 550px;
   margin: 0 auto;
 }
-.service-contact{
-  display: flex;
-  justify-content: center;
-  margin-left: 280px;
-  margin-right: 280px;
+
+label{
   font-weight: 800;
   font-family: inherit;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 125%;
-  padding-bottom: 0px;
-  padding-top: 60px;
 }
 
 .input-group {
@@ -357,12 +361,6 @@ img{
   color: black; 
 }
 
-label {
-  display: block;
-  color: black;
-  margin-bottom: 5px;
-  font-size: 20px;
-}
 
 #nombre, #email, #mensaje{
   width: 100%;
@@ -375,8 +373,8 @@ label {
 }
 
 button {
-  background-color: #CF7784;
-  color:black;
+  background-color: #00000080;;
+  color:white;
   border-radius: 5px;
   padding: 13px 23px;
   cursor: pointer;
@@ -394,7 +392,7 @@ button {
   background-size: cover;
   background-position: center bottom;
   padding-top: 30px;
-  padding-bottom: 215px;
+  padding-bottom: 100px;
 }
 
 
