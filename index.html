@@ -1,24 +1,173 @@
 <!-- Ejemplo: https://jonbardiwebdesign.co.uk/ -->
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.cdnfonts.com/css/morganite" rel="stylesheet">         
+        <link href="https://fonts.cdnfonts.com/css/morganite" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
         <div class="main">
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li class="active">Inicio</li>
-                    <li>Sobre mi</li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#proyecto">Proyectos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
             <div class="slogan-design">
                 <h1>NAVEGA AL</h1>
-                <h2>MUNDO DIGITAL</h2>
+                <h2 class="design-h2">MUNDO DIGITAL</h2>
                 <h3>Diseño Web Zaragoza</h3>
             </div>
+        </div>
+
+    <section id="sobre-mi">
+        <h4 class="title-section"> Diseñadora web freelance</h4>
+        <p class="slogan"> ¡Haz que tu sitio web sea una obra maestra sin gastar una fortuna!</p>
+            <div class="section-container image-row">
+                <div class="photo-row">
+                <img src="./images/carlota.jpg">
+                </div>                           
+                    <p class="biography">
+                        ¡Hola! Soy Carlota Cetina, una entusiasta del diseño web en Zaragoza. Con más de 10
+                            años en atención al cliente, decidí dar un giro y sumergirme en el desarrollo web.
+                            Mi objetivo es llevar la esencia de negocios y emprendimientos a la web, creando 
+                            sitios impactantes para pymes y profesionales. 
+                            Permíteme ser tu guía en este viaje creativo, donde transformaremos
+                            tu presencia en línea en una auténtica obra de arte digital.
+                    <br>
+                    <br>   
+                        ¡PÓNGAMONOS EN MARCHA Y CREEMOS JUNTOS UNA PRESENCIA EN LÍNEA QUE DESTAQUE!
+                    </p>
+            </div>
+    </section> 
+
+    <section id="proyecto">
+        <div class="section2-container">
+                    <p class="title-section">
+                        ¡Bienvenido al mundo digital!
+                    </p>
+                    <p class="slogan">
+                        Aquí te presento una muestra de mis proyectos de diseño web.
+                    </p>         
+        <div class="image-grid">
+            <div class="image-row-proyectos">
+                <img src="./images/taller.jpg" alt="Proyecto 1">
+                <img src="./images/blog.png" alt="Proyecto 2">
+            </div>
+            <div class="image-row-proyectos">
+                <img src="./images/makeup.png" alt="Proyecto 3">
+                <img src="./images/gestion.png" alt="Proyecto 4">
+            </div>
+            <div class="image-row-proyectos">
+                <img src="./images/tienda.png" alt="Proyecto 5">
+                <img src="./images/apiNasa.png" alt="Proyecto 6">
+            </div>
+        </div>
+       </div>               
+            
+    </section>             
+                
+    <p class="title-section">Tu Visión, Nuestra Creación</p>
+        <p class="slogan">Explora Nuestros Paquetes y Precios Hoy Mismo</p>
+    <section id= "servicios" class="section3-container">   
+        <div class="service-row">
+            <div class="service-title">Servicio Básico</div>
+                <div>
+                    <ul >
+                        <li class="description">Tres páginas</li>
+                        <li class="description">Configuración limitada</li>
+                        <li class="description">Web responsive</li>
+                    </ul>
+                </div>
+            <a class="cta-button" href="#">Desde 300€</a>
+        </div>
+        <div class="service-row">
+            <div class="service-title">Servicio Personalizado</div>
+                <div>
+                    <ul>
+                        <li class="description">Cuatro páginas</li>
+                        <li class="description">Configuración personalizable</li>
+                        <li class="description">Web responsive</li>
+                    </ul>
+                </div>
+            <a class="cta-button" href="#">Desde 450€</a>
+        </div>
+            <div class="service-row">
+                <div class="service-title">E-commerce</div>
+                    <div>
+                        <ul>
+                            <li class="description">Cinco páginas</li>
+                            <li class="description">Configuración personalizada</li>
+                            <li class="description">Web responsive</li>
+                        </ul>
+                </div>
+                <a class="cta-button" href="#">Desde 600€</a>
+            </div>
+            </section>
+                  
+    <section id="contacto" class="section4-container">
+        <div class="contact-row">
+            <p class=title-section>
+                ¡Conversemos y hagamos que tu sitio web sea 
+                inolvidable!
+            </p>
+            <p class="slogan slogan-liner">
+                No dudes en ponerte en contacto conmigo. ¡Estoy aquí para ayudarte!
+            </p>
+        </div>    
+            <form class="form">
+                <div class="input-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+    </section>      
+
+        <div class="rotated-container">
+            <footer class="footer">
+                <ul class="social-icon">
+                    <li class="social-icon_item"><a class="social-icon_link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                    <li class="social-icon_item"><a class="social-icon_link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                    <li class="social-icon_item"><a class="social-icon_link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                    <li class="social-icon_item"><a class="social-icon_link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu_item"><a class="menu_link" href="#">Inicio</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Sobre mi</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Proyectos</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Servicios</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Contacto</a></li>
+
+                </ul>
+                <p>&copy;2023 Carlota Cetina | All Rights Reserved</p>
+            </footer>
         </div>
     </body>
 </html>
