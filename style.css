@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  
 }
 
 .main {
@@ -10,12 +9,10 @@ body {
     background: url('./images/woman.gif');
     background-size: cover;
     background-position: center bottom;
+    width: 100%;
 }
 
 ul{
-    margin: 0;
-    padding: 0;
-    width: 50%;
     display: flex;
     list-style: none;
 }
@@ -60,8 +57,8 @@ h1{
     font-family: 'Morganite', sans-serif;
     font-size: 170px;
     margin: 0px;
-    margin-left: 293;
-    margin-top: 20;
+    padding-left: 136px;
+    margin-top: 20px;
     font-weight: 900;
     text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5); 
     letter-spacing: 3px; 
@@ -72,7 +69,7 @@ h2{
     font-family: 'Morganite', sans-serif;
     font-size: 170px;
     margin: 0px;
-    margin-left: 213;
+    padding-left: 50px;
     padding-top: 0px;
     font-weight: 900;
     text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5); 
@@ -99,8 +96,8 @@ h3{
     font-family: 'Morganite', sans-serif;
     font-size: 66px;
     margin: 0px;
-    margin-left: 308;
-    margin-top: 3;
+    padding-left: 134px;
+    margin-top: 3px;
     font-weight: 800;
     text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5); 
     letter-spacing: 3px; 
@@ -118,7 +115,7 @@ h4{
 }
 
 #sobre-mi{
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 h5{
@@ -148,16 +145,6 @@ nav{
     padding: 32px 74px ;
     margin-top: 215px;
 }
-
-p{
-    color:black;
-    font-size: 21px;
-    font-family: 'Lato', sans-serif;
-    margin-left: 91px;
-    margin-right: 116px;
-    padding-bottom: 40px;    
-}
-
 .section2-container{
     display: flex;
     flex-direction: column;
@@ -199,14 +186,14 @@ img{
   justify-content: center;
 }
 
-.image-row-proyectos {
+.image-grid-proyectos {
   display: grid;
   justify-content: center;
   align-content: center; 
   gap: 0px;
 }
 
-.image-row-proyectos img {
+.image-grid-proyectos img {
   width: 440px;
   height: 208px;
   border: 1.5px solid black;
@@ -219,17 +206,13 @@ img{
   text-decoration: overline underline #000;
   line-height: 2;
   text-decoration-thickness: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: black;
   padding-bottom: 0px;
   font-weight: 400;
   line-height: 26px;
-  margin-bottom: 0px;
-  text-decoration-skip: ink;
+  margin-bottom: 34px;
 }
-
 
 .biography{ 
   font-family: Poppins;
@@ -239,18 +222,16 @@ img{
   margin-bottom: 75px;
   margin-left: 10px;
   margin-right: 200px;
-  padding-top: 5px;
+  padding-top: 50px;
 }
 
 .section3-container{
-  padding-right: 300px;
-  padding-left: 300px;
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
-  flex-direction: column; 
-  padding-bottom: 60px;
-  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .slogan-services{
@@ -283,30 +264,31 @@ img{
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
   border-radius: 10px;
   padding: 20px;
   padding-bottom: 40px;
   margin: 20px;
   text-align: center;
   box-shadow: 5px 6px 2px 0px #00000045;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif; 
+  margin-bottom: 50px;
   }
 
-.description {
+.description{
   color: white;
-  font-weight: 500; 
-  font-size: 24px; 
+  font-weight: 425;
+  font-size: 24px;
   margin-bottom: 10px;
-  display: inline-block;
+  display: block;
   font-family: inherit;
   text-transform: none;
-  letter-spacing: 1px;
-  font-size: 32px;
+  letter-spacing: 10px;
   line-height: 39px;
-  padding-right: 40px;
+  padding-right: 50px;
   padding-left: 50px;
+}
+.description-font{
+  font-family: inherit;
+  font-size: 32px;
 }
 
 .button-container{
@@ -315,28 +297,38 @@ img{
 }
 
 .service-title {
-    font-size: 38px;
-    font-weight: bold;
+    font-size: 100px;
+    font-weight: 800;
     color:#D22F85; 
-    font-family: "Bebas Neue", Sans-serif;
+    font-family: 'Morganite', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:#f78da7a3;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 14px 52px;
+  background-color: #f78da7a3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Morganite', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3px;
+  font-size: 80px;
 }
 
 .section4-container {
   background: url('./images/sunset.png');
   opacity: 0.8; 
+  padding-bottom: 100px;
 }
 
 .design-text {
@@ -389,13 +381,11 @@ button {
   font-family: 'Morganite', sans-serif;
   
 }
-
 #contacto{
   height: 85vh;
   background-size: cover;
   background-position: center bottom;
   padding-top: 30px;
-  padding-bottom: 100px;
 }
 
 
@@ -464,6 +454,257 @@ button {
 
 
 
+@media (max-width: 1110px) {
 
+  .main{
+    height: 83vh;
+  }
+  .nav-menu{
+    width: 682px;
+  }
+  h1{
+    font-size: 95px;
+    margin-top: 111px;
+    padding-left: 169px;
+  }
+  h2{
+    font-size: 95px;
+    padding-left: 118px;
+  }
+  h3{
+    font-size: 41px;
+    padding-left: 157px;
+  }
+  #sobre-mi{
+    margin-bottom: 0px;
+  }
+  .title-section{
+    font-size: 28px;
+    text-align: center;
+  }
+  .slogan{
+    font-size: 20px;
+    text-align: center;
+  }
+  .image-row img{
+    width: 214px;
+    margin-left: 27px;
+    margin-top: 45px;
+    margin-right: 0px;
+  }
+  .biography{
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+    padding-top: 53px;
+  }
+  .service-row{
+    width: 100vh;
+    margin-left: 160px;
+  }
+  .image-grid-proyectos img {
+    width: 305px;
+    height: 155px;
+  }
+  .cta-button{
+    padding: 10px 30px;
+  }
+  .section3-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .section4-container {
+    padding-bottom: 55px;
+  }
 
+}
+
+@media (max-width: 900px) {
+
+  .main{
+    height: 75vh; 
+  }
+  .body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .nav-menu{
+    width: 543px;
+  }
+  li{
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-left: 17px;
+    padding-right: 17px;
+    height: 0px;
+  }
+  .nav-menu .active {
+    height: 0px;
+    padding-left: 8px;
+    padding-right: 6px;
+  }
+
+  h1{
+    font-size: 89px;
+    margin-top: 127px;
+    padding-left: 77px;
+  }
+  h2{
+    font-size: 78px;
+    padding-left: 55px;
+  }
+  h3{
+    font-size: 43px;
+    padding-left: 66px;
+  }
+  #sobre-mi{
+    margin-bottom: 0px;
+  }
+  .section-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .title-section{
+    font-size: 15px;
+  }
+  .slogan{
+    font-size: 13px;
+  }
+  .image-row img{
+    width: 228px;
+    margin-left: 137px;
+    margin-top: 10px;
+    margin-right: 137px;
+    margin-bottom: 0px;
+  }
+  .photo-row{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+  }
+  .biography{
+    font-size: 14px;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .service-row{
+    width: 74vh;
+    margin-left: 0px;
+  }
   
+  .image-grid-proyectos img {
+    width: 148px;
+    height: 128px;
+  }
+  .section3-container{
+    padding-left: 0px;
+  }
+  .description{
+    font-size: 16px;
+    padding-left: 14px;
+  }
+  .service-title{
+    font-size: 58px;
+  }
+  .cta-button{
+    font-size: 36px;
+    margin-top: 52px;
+  }
+  .section4-container {
+    padding-bottom: 0px;
+  }
+}
+
+
+@media (max-width: 700px){
+
+  .main{
+    height: 39vh; 
+  }
+  .body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .nav-menu{
+    width: 600px;
+  }
+  li{
+    font-size: 18px;
+    letter-spacing: 2px;
+    height: 0px;
+    padding: 35px 8px;
+  }
+  .nav-menu .active {
+    height: 0px;
+    padding-left: 8px;
+    padding-right: 6px;
+  }
+
+  h1{
+    font-size: 40px;
+    margin-top: 35px;
+    padding-left: 77px;
+  }
+  h2{
+    font-size: 40px;
+    padding-left: 55px;
+  }
+  h3{
+    font-size: 21px;
+    padding-left: 58px;
+    font-weight: 800;
+  }
+  #sobre-mi{
+    margin-bottom: 0px;
+  }
+  .section-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .title-section{
+    font-size: 15px;
+  }
+  .slogan{
+    font-size: 12px;
+  }
+  .biography{
+    font-size: 14px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .service-row{
+    width: 45vh;
+  }
+  .image-grid-proyectos img {
+    width: 112px;
+    height: 84px;
+  }
+  .section3-container{
+    padding-left: 0px;
+  }
+  .description{
+    font-size: 16px;
+    padding-left: 14px;
+  }
+  .description-font{
+    font-size: 17px;
+  }
+  .service-title{
+    font-size: 50px;
+  }
+  .cta-button{
+    font-size: 21px;
+  }
+  .section4-container {
+    padding-bottom: 115px;
+  }
+}
