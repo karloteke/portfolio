@@ -277,7 +277,7 @@ img{
   color: white;
   font-weight: 425;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   display: block;
   font-family: inherit;
   text-transform: none;
@@ -289,6 +289,7 @@ img{
 .description-font{
   font-family: inherit;
   font-size: 32px;
+  display: flex;
 }
 
 .button-container{
@@ -311,12 +312,9 @@ img{
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 14px 52px;
-  background-color: #f78da7a3;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  font-size: 100px;
+  font-weight: 800;
+  color:#FCF300; 
   font-family: 'Morganite', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -487,20 +485,23 @@ button {
     text-align: center;
   }
   .image-row img{
-    width: 214px;
-    margin-left: 27px;
-    margin-top: 45px;
-    margin-right: 0px;
+    width: 228px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
   .biography{
     margin-right: 0px;
     margin-left: 0px;
     font-size: 12px;
     padding-top: 53px;
+    margin-top: 0px;
+    padding-top: 0px;
   }
   .service-row{
     width: 100vh;
-    margin-left: 160px;
+    margin-left: 0px;
   }
   .image-grid-proyectos img {
     width: 305px;
@@ -509,6 +510,7 @@ button {
   .cta-button{
     padding: 10px 30px;
   }
+
   .section3-container{
     display: flex;
     justify-content: center;
@@ -575,10 +577,8 @@ button {
   }
   .image-row img{
     width: 228px;
-    margin-left: 137px;
     margin-top: 10px;
-    margin-right: 137px;
-    margin-bottom: 0px;
+    margin-left: 0px;
   }
   .photo-row{
     display: flex;
@@ -607,15 +607,24 @@ button {
     padding-left: 0px;
   }
   .description{
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 14px;
+    padding-bottom: 30px;
   }
   .service-title{
     font-size: 58px;
   }
   .cta-button{
-    font-size: 36px;
+    font-size: 56px;
     margin-top: 52px;
+  }
+  #nombre, #email, #mensaje{
+    width: 214px;
+  }
+  .form{
+    display: grid;
+    align-content: center;
+    justify-content: center;
   }
   .section4-container {
     padding-bottom: 0px;
@@ -650,7 +659,7 @@ button {
 
   h1{
     font-size: 40px;
-    margin-top: 35px;
+    margin-top: 46px;
     padding-left: 77px;
   }
   h2{
@@ -662,19 +671,23 @@ button {
     padding-left: 58px;
     font-weight: 800;
   }
-  #sobre-mi{
-    margin-bottom: 0px;
-  }
   .section-container{
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
   }
   .title-section{
-    font-size: 15px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .image-row img{
+    margin: 0px;
   }
   .slogan{
     font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .biography{
     font-size: 14px;
@@ -682,29 +695,38 @@ button {
     padding-top: 0px;
   }
   .service-row{
-    width: 45vh;
+    width: 34vh;
+    margin-right: 0px;
   }
   .image-grid-proyectos img {
     width: 112px;
     height: 84px;
+  }
+  .image-grid{
+    padding-top: 0px;
   }
   .section3-container{
     padding-left: 0px;
   }
   .description{
     font-size: 16px;
-    padding-left: 14px;
+    padding-left: 0px;
   }
   .description-font{
-    font-size: 17px;
+    font-size: 15px;
   }
   .service-title{
-    font-size: 50px;
+    font-size: 58px;
   }
   .cta-button{
-    font-size: 21px;
+    font-size: 50px;
+  }
+  .form{
+    display: grid;
+    align-content: center;
+    justify-content: center;
   }
   .section4-container {
-    padding-bottom: 115px;
+    padding-bottom: 34px;
   }
 }
